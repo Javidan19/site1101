@@ -6,4 +6,4 @@ My name is Javidan Hasanli. I am a 1st-year student at ADA University. I am inte
 
 Links:
 - GitHub: https://github.com/Javidan19
-- Codecademy: https://www.codecademy.com/profiles/YOUR_PROFILE
+- Codecademy: https://www.codecademy.com/profiles/Javidan19
