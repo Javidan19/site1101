@@ -9,3 +9,8 @@ My name is Javidan Hasanli. I am a 1st-year student at ADA University. I am inte
 
 ## Projects
 - Project 1: A short description of this project.
+
+## Connect with me
+
+[![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Javidan19) 
+[![Codecademy](https://img.shields.io/badge/Codecademy-0A0A0A?style=for-the-badge&logo=codecademy&logoColor=white)](https://www.codecademy.com/profiles/Javidan19)
