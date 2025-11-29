@@ -1,3 +1,5 @@
+[Home](index.md) | [About](about.md) | [Projects](projects.md)
+
 # My Projects
 
 ## Project 1
