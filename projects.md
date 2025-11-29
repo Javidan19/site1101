@@ -1,8 +1,23 @@
-[Home](index.md) | [About](about.md) | [Projects](projects.md)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+</head>
+<body>
 
-# My Projects
+<p>
+  <a href="index.html">Home</a> | 
+  <a href="about.html">About</a> | 
+  <a href="projects.html">Projects</a>
+</p>
 
-## Project 1
-- Title: My First Project
-- Description: This is a short description of my first project. Here I learned how to create a website using GitHub Pages.
-- Image: ![Project Image](https://via.placeholder.com/150)
+<h1>My Projects</h1>
+
+<h2>Project 1</h2>
+<p>Title: My First Project</p>
+<p>Description: This is a short description of my first project. Here I learned how to create a website using GitHub Pages.</p>
+<img src="https://via.placeholder.com/150" alt="Project Image">
+
+</body>
+</html>
