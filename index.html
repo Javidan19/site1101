@@ -2,44 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Javidan Hasanli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javidan Hasanli – SITE1101</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
-        body { font-family: Arial; margin: 40px; }
-        nav a { margin-right: 15px; font-weight: bold; }
-        section { margin-top: 30px; }
+        body {
+            background: #f7f7f7;
+        }
+        .navbar {
+            background: #222 !important;
+        }
+        .navbar a {
+            color: white !important;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
     </style>
 </head>
+
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">My Website</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<h1>Hello, I am Javidan Hasanli</h1>
-<p>Welcome to my personal website for SITE1101.</p>
+<div class="container mt-4">
 
-<section>
-    <h2>About Me</h2>
-    <p>I am a 1st-year student at ADA University interested in web development.</p>
-</section>
+    <div class="card p-4 mb-4">
+        <h2>Hello, this is my website</h2>
+        <p>Welcome to my personal website for SITE1101.</p>
+    </div>
 
-<section>
-    <h2>Projects</h2>
-    <a href="projects.html">See My Projects</a>
-</section>
+    <div class="card p-4 mb-4">
+        <h3>About Me</h3>
+        <p>My name is Javidan Hasanli. I am a 1st-year student at ADA University. I am interested in web development and programming.</p>
+    </div>
 
-<section>
-    <h2>Connect with me</h2>
-    <ul>
-        <li><a href="https://github.com/Javidan19">GitHub</a></li>
-        <li><a href="https://www.codecademy.com/profiles/Javidan19">Codecademy</a></li>
-    </ul>
-</section>
+    <div class="card p-4 mb-4">
+        <h3>Projects</h3>
+        <ul>
+            <li>Project 1: A short description of this project.</li>
+        </ul>
+    </div>
+
+    <div class="card p-4 mb-4">
+        <h3>Connect with me</h3>
+        <a class="btn btn-dark me-2" href="https://github.com/Javidan19" target="_blank">GitHub</a>
+        <a class="btn btn-primary" href="https://www.codecademy.com/profiles/Javidan19" target="_blank">Codecademy</a>
+    </div>
+
+</div>
 
 <footer>
-    <p>© 2025 Javidan Hasanli — All Rights Reserved</p>
+    © 2025 Javidan Hasanli — All Rights Reserved
 </footer>
 
 </body>
