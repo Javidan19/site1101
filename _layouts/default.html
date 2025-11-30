@@ -2,24 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="/site1101/assets/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fafafa;
+            line-height: 1.6;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1, h2 {
+            color: #222;
+        }
+        .section {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        .icons img {
+            margin-right: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #eee;
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
 <nav>
-    <a href="/site1101/">Home</a>
-    <a href="/site1101/about.html">About</a>
-    <a href="/site1101/projects.html">Projects</a>
+    <a href="{{ site.baseurl }}/">Home</a>
+    <a href="{{ site.baseurl }}/about/">About</a>
+    <a href="{{ site.baseurl }}/projects/">Projects</a>
 </nav>
 
-<div class="container">
+<main>
     {{ content }}
-</div>
+</main>
 
 <footer>
-    © 2025 Javidan Hasanli — All Rights Reserved
+    <p>© 2025 Javidan Hasanli — All Rights Reserved</p>
 </footer>
 
 </body>
