@@ -1,6 +1,5 @@
 title: "Javidan Hasanli Portfolio"
-description: "Site1101 Personal Website"
+description: "Personal website for SITE1101"
 url: "https://javidan19.github.io"
 baseurl: "/site1101"
-
-theme: minima
+theme: null
