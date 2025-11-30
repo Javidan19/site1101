@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+
+    <link rel="stylesheet" href="/site1101/assets/style.css">
 </head>
 <body>
 
 <nav>
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/about.html' | relative_url }}">About</a>
-    <a href="{{ '/projects.html' | relative_url }}">Projects</a>
+    <a href="/site1101/">Home</a>
+    <a href="/site1101/about.html">About</a>
+    <a href="/site1101/projects.html">Projects</a>
 </nav>
 
 <div class="container">
-{{ content }}
+    {{ content }}
 </div>
 
 <footer>
-    <p>© 2025 Javidan Hasanli</p>
+    © 2025 Javidan Hasanli — All Rights Reserved
 </footer>
 
 </body>
