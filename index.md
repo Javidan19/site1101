@@ -3,18 +3,36 @@ layout: default
 title: Home
 ---
 
-# Hello, I am Javidan Hasanli
+<div class="section">
+  <h1>Hello, this is my website</h1>
+  <p>This website is for my Site1101 project.</p>
+</div>
 
-Welcome to my personal website for SITE1101.
+<div class="section">
+  <h2>About Me</h2>
+  <p>My name is Javidan Hasanli. I am a 1st-year student at ADA University. I am interested in web development and programming.</p>
+</div>
 
-## About Me
-I am a 1st-year student at ADA University interested in web development.
+<div class="section">
+  <h2>Projects</h2>
+  <ul>
+    <li>Project 1: A short description of this project.</li>
+  </ul>
+</div>
 
-## Projects
-[See My Projects](projects.md)
+<div class="section">
+  <h2>Connect with me</h2>
+  <div class="icons">
+    <a href="https://github.com/Javidan19">
+      <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+    </a>
+    <a href="https://www.codecademy.com/profiles/Javidan19">
+      <img src="https://img.shields.io/badge/Codecademy-0A0A0A?style=for-the-badge&logo=codecademy&logoColor=white" alt="Codecademy">
+    </a>
+  </div>
+</div>
 
-## Connect with me
-- [GitHub](https://github.com/Javidan19)
-- [Codecademy](https://www.codecademy.com/profiles/Javidan19)
-
-[Source Code](https://github.com/Javidan19/site1101)
+<div class="section">
+  <h2>Source Code</h2>
+  <p>View the source code on <a href="https://github.com/Javidan19/site1101">GitHub</a></p>
+</div>
