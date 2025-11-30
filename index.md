@@ -11,11 +11,12 @@ Welcome to my personal website for SITE1101.
 I am a 1st-year student at ADA University interested in web development.
 
 ## Projects
-[See My Projects](/site1101/projects/)
+[See My Projects](projects.md)
 
 ## Connect with me
+
 - [GitHub](https://github.com/Javidan19)
 - [Codecademy](https://www.codecademy.com/profiles/Javidan19)
 
 ## Source Code
-[GitHub Repository](https://github.com/Javidan19/site1101)
+[View my GitHub Repository](https://github.com/Javidan19/site1101)
