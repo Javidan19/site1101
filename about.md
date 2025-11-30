@@ -5,8 +5,6 @@ title: About
 
 # About Me
 
-My name is Javidan Hasanli. I am a 1st-year student at ADA University. I am interested in web development.
-
-Links:
-- My GitHub Profile
-- My Codecademy Profile
+My name is Javidan Hasanli.  
+I am a 1st-year student at ADA University.  
+I am interested in web development and programming.
