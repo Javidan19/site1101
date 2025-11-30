@@ -1,5 +1,5 @@
-title: "Javidan Hasanli Portfolio"
+title: "Javidan Hasanli"
 description: "Personal website for SITE1101"
 url: "https://javidan19.github.io"
-baseurl: "/site1101"
+baseurl: "/site1101"   # mütləq belə qalsın
 theme: null
