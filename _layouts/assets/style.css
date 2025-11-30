@@ -27,16 +27,22 @@ nav a:hover {
 }
 
 .container {
+    margin-top: 20px;
+}
+
+.section {
     background: white;
-    padding: 20px;
+    padding: 15px 20px;
     border-radius: 6px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
     margin-bottom: 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
 footer {
+    margin-top: 40px;
+    background-color: #333;
+    color: white;
     text-align: center;
     padding: 10px;
-    color: #777;
-    margin-top: 30px;
+    border-radius: 6px;
 }
