@@ -1,27 +1,26 @@
-# -------------------------------------------------------------
-#   Javidan Hasanli – Personal Website (SITE1101 Project)
-#   Fully configured Jekyll + Minimal Mistakes setup
-# -------------------------------------------------------------
+# ----------------------------------------------
+#   Javidan Hasanli – Personal Website (SITE1101)
+#   Fully configured for Minimal Mistakes + Jekyll
+# ----------------------------------------------
 
 title: "Javidan Hasanli – Personal Website"
 description: "SITE1101 personal portfolio website built with Jekyll"
+
+# THEME SETTINGS
 theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
-# Your GitHub Pages URL
+# SITE URLS
 url: "https://javidan19.github.io"
-baseurl: "/site1101"   # Do NOT remove the slash
+baseurl: "/site1101"
 
-# -------------------------------------------------------------
-# Plugins required by GitHub Pages + Minimal Mistakes
-# -------------------------------------------------------------
+# PLUGINS REQUIRED
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-include-cache
 
-# -------------------------------------------------------------
-# Author Profile (automatically shown on every page)
-# -------------------------------------------------------------
+# AUTHOR INFORMATION
 author:
   name: "Javidan Hasanli"
   avatar: "/assets/images/profile.jpg"
@@ -34,26 +33,20 @@ author:
       icon: "fas fa-laptop-code"
       url: "https://www.codecademy.com/profiles/Javidan19"
 
-# -------------------------------------------------------------
-# Default layout for all .md pages
-# -------------------------------------------------------------
+# PAGE DEFAULT SETTINGS
 defaults:
   - scope:
       path: ""
       type: pages
     values:
-      layout: single       # Minimal Mistakes page layout
-      author_profile: true # Displays author box on the sidebar
+      layout: single
+      author_profile: true
 
-# -------------------------------------------------------------
-# Navigation via _data/navigation.yml
-# -------------------------------------------------------------
+# INCLUDE PAGE FOLDER IF NEEDED
 include:
   - _pages
 
-# -------------------------------------------------------------
-# Collections (optional, for advanced project pages)
-# -------------------------------------------------------------
+# COLLECTIONS (Future expansion)
 collections:
   projects:
     output: true
