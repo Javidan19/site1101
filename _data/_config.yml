@@ -1,3 +1,27 @@
+# -------------------------------------------------------------
+#   Javidan Hasanli – Personal Website (SITE1101 Project)
+#   Fully configured Jekyll + Minimal Mistakes setup
+# -------------------------------------------------------------
+
+title: "Javidan Hasanli – Personal Website"
+description: "SITE1101 personal portfolio website built with Jekyll"
+theme: minimal-mistakes-jekyll
+
+# Your GitHub Pages URL
+url: "https://javidan19.github.io"
+baseurl: "/site1101"   # Do NOT remove the slash
+
+# -------------------------------------------------------------
+# Plugins required by GitHub Pages + Minimal Mistakes
+# -------------------------------------------------------------
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+# -------------------------------------------------------------
+# Author Profile (automatically shown on every page)
+# -------------------------------------------------------------
 author:
   name: "Javidan Hasanli"
   avatar: "/assets/images/profile.jpg"
@@ -9,3 +33,27 @@ author:
     - label: "Codecademy"
       icon: "fas fa-laptop-code"
       url: "https://www.codecademy.com/profiles/Javidan19"
+
+# -------------------------------------------------------------
+# Default layout for all .md pages
+# -------------------------------------------------------------
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single       # Minimal Mistakes page layout
+      author_profile: true # Displays author box on the sidebar
+
+# -------------------------------------------------------------
+# Navigation via _data/navigation.yml
+# -------------------------------------------------------------
+include:
+  - _pages
+
+# -------------------------------------------------------------
+# Collections (optional, for advanced project pages)
+# -------------------------------------------------------------
+collections:
+  projects:
+    output: true
