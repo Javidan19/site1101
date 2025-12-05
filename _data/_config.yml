@@ -1,7 +1,7 @@
-# ----------------------------------------------
-#   Javidan Hasanli – Personal Website (SITE1101)
-#   Fully configured for Minimal Mistakes + Jekyll
-# ----------------------------------------------
+# ------------------------------------------------------------
+#   Javidan Hasanli – Personal Website (SITE1101 Project)
+#   Fully configured for GitHub Pages + Minimal Mistakes
+# ------------------------------------------------------------
 
 title: "Javidan Hasanli – Personal Website"
 description: "SITE1101 personal portfolio website built with Jekyll"
@@ -10,17 +10,20 @@ description: "SITE1101 personal portfolio website built with Jekyll"
 theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
+# REQUIRED FOR THEME TO LOAD CORRECTLY
+plugins_dir: _plugins
+
 # SITE URLS
 url: "https://javidan19.github.io"
 baseurl: "/site1101"
 
-# PLUGINS REQUIRED
+# PLUGINS REQUIRED BY GITHUB PAGES
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-include-cache
 
-# AUTHOR INFORMATION
+# AUTHOR PROFILE SETTINGS
 author:
   name: "Javidan Hasanli"
   avatar: "/assets/images/profile.jpg"
@@ -33,7 +36,7 @@ author:
       icon: "fas fa-laptop-code"
       url: "https://www.codecademy.com/profiles/Javidan19"
 
-# PAGE DEFAULT SETTINGS
+# DEFAULT PAGE SETTINGS
 defaults:
   - scope:
       path: ""
@@ -42,11 +45,11 @@ defaults:
       layout: single
       author_profile: true
 
-# INCLUDE PAGE FOLDER IF NEEDED
+# NAVIGATION (CONTROLLED FROM _data/navigation.yml)
 include:
   - _pages
 
-# COLLECTIONS (Future expansion)
+# COLLECTIONS (OPTIONAL)
 collections:
   projects:
     output: true
