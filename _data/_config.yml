@@ -1,1 +1,32 @@
+title: "Javidan Hasanli – Personal Website"
+description: "SITE1101 personal portfolio website built with Jekyll"
+theme: minimal-mistakes-jekyll
+
+url: "https://javidan19.github.io"
+baseurl: "/site1101"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+author:
+  name: "Javidan Hasanli"
+  avatar: "/assets/images/profile.jpg"
+  bio: "IT & Engineering student at ADA University. Interested in AI, web development, and problem solving."
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/Javidan19"
+    - label: "Codecademy"
+      icon: "fas fa-laptop-code"
+      url: "https://www.codecademy.com/profiles/YOUR_USERNAME"
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
