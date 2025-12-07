@@ -66,3 +66,4 @@ footer:
     - label: "Email"
       icon: "fas fa-envelope"
       url: "mailto:javidanhasanli02@gmail.com"
+minimal_mistakes_skin: "dark"
