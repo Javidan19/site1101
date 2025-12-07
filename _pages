@@ -1,16 +1,32 @@
 ---
-title: "About Me"
-layout: page
-permalink: /about/
+title: "Contact"
+permalink: /contact/
+layout: single
+author_profile: true
 ---
 
-Hi, I’m **Javidan Hasanli** — a student at **ADA University**, passionate about
-Information Technologies, digital creativity, and building modern web projects.
+## 📬 Contact Me
 
-I enjoy:
-- Web Development (HTML, CSS, Jekyll, GitHub Pages)
-- Problem Solving & Algorithms
-- Exploring how technology shapes society
-- Public speaking, academic writing, and digital storytelling
+If you want to reach me for project inquiries, collaboration, or academic purposes, feel free to send a message using the form below.
 
-This website is a growing portfolio of my work and learning journey.
+---
+
+<form action="https://formspree.io/f/mwkgerjl" method="POST">
+  <label>Your Name</label>
+  <input type="text" name="name" placeholder="Enter your name" required>
+
+  <label>Your Email</label>
+  <input type="email" name="_replyto" placeholder="Enter your email" required>
+
+  <label>Your Message</label>
+  <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+
+---
+
+**You can also find me here:**
+
+- GitHub: [@Javidan19](https://github.com/Javidan19)  
+- Codecademy: [Profile](https://www.codecademy.com/profiles/Javidan19)
