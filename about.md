@@ -2,35 +2,41 @@
 title: "About Me"
 permalink: /about/
 layout: single
+author_profile: true
 ---
+
+<img src="/site1101/assets/images/profile.jpg" class="profile-img">
 
 ## 👤 Who Am I?
 
-My name is **Javidan Hasanli**, and I am a student at ADA University studying **Information Technologies and Engineering**.
+My name is **Javidan Hasanli**, and I am a student at **ADA University**, majoring in **Information Technologies and Engineering**.  
+I am actively building my skills in programming, web development, and information systems through university coursework and personal projects.
 
-I am building my knowledge in programming, web development, and information systems within the SITE1101 course and through my individual learning.
-
-I enjoy exploring how technology shapes modern life and improving my skills in AI-assisted development.
-
----
-
-## 🧠 Skills
-
-- HTML, CSS, Jekyll  
-- Git & GitHub version control  
-- Python basics  
-- AI-assisted coding (Cursor, VSCode)  
-- Problem solving & logical thinking  
+I enjoy exploring how technology shapes modern society and using AI-assisted tools to speed up learning, creativity, and development.
 
 ---
 
-## 📚 Activities
+## 🧠 Skills & Tools
 
-- **SITE1101 Project 1:** Personal Website  
-- **Hour of Code:** (optional — you can add later)  
-- Class presentations, research work, and technical assignments  
-- Academic Writing & Speaking course projects  
+- HTML, CSS, Jekyll (GitHub Pages)
+- Git & GitHub version control
+- Python basics
+- AI-assisted coding (Cursor, VS Code, ChatGPT)
+- Logical thinking & problem solving
 
 ---
 
-If you want to learn more about what I do, feel free to check my projects page! 🚀
+## 📚 Academic Activities
+
+- **SITE1101 Project:** Personal Portfolio Website  
+- **Technical Coursework:** Algorithms, IT fundamentals, system design  
+- **Academic Writing & Speaking:** Presentations, speeches, research tasks  
+- **Independent Learning:** Web projects, Codecademy practice, GitHub workflows  
+
+---
+
+## 🚀 What’s Next?
+
+This website is a growing portfolio where I share my learning progress, coding practice, and future projects.  
+You can explore more on the **Projects** page!
+
