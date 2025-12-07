@@ -95,3 +95,11 @@ button:hover {
   font-weight: bold;
   color: #007bff;
 }
+/* Home page background */
+.home-bg {
+  background: url('/site1101/assets/images/bg.jpg') no-repeat center center/cover;
+  padding: 80px 20px;
+  border-radius: 12px;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
