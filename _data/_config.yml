@@ -6,17 +6,16 @@
 title: "Javidan Hasanli – Personal Website"
 description: "SITE1101 personal portfolio website built with Jekyll"
 
-# THEME SETTINGS
-theme: minimal-mistakes-jekyll
+# USE REMOTE THEME (IMPORTANT!)
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
-# REQUIRED BY MINIMAL MISTAKES
+# PLUGINS REQUIRED BY GITHUB PAGES
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-include-cache
 
-# SITE URLS (VERY IMPORTANT)
+# SITE URLS
 url: "https://javidan19.github.io"
 baseurl: "/site1101"
 
@@ -25,7 +24,7 @@ include:
   - _pages
   - assets/css/style.css
 
-# AUTHOR PROFILE
+# AUTHOR PROFILE SETTINGS
 author:
   name: "Javidan Hasanli"
   avatar: "/assets/images/profile.jpg"
@@ -47,14 +46,16 @@ defaults:
       layout: single
       author_profile: true
 
-# COLLECTIONS (OPTIONAL – YOU CAN USE LATER)
+# COLLECTIONS (OPTIONAL)
 collections:
   projects:
     output: true
 
-# SASS SETTINGS
+# CUSTOM CSS
 sass:
   style: compressed
+
+# FOOTER LINKS
 footer:
   links:
     - label: "GitHub"
@@ -66,4 +67,6 @@ footer:
     - label: "Email"
       icon: "fas fa-envelope"
       url: "mailto:javidanhasanli02@gmail.com"
+
+# DARK MODE SKIN
 minimal_mistakes_skin: "dark"
