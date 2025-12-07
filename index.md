@@ -4,12 +4,16 @@ title: "Welcome"
 author_profile: true
 ---
 
+<div class="home-bg">
+
 ## 👋 Welcome to My Personal Website
 
-I’m **Javidan Hasanli**, an IT & Engineering student at ADA University  
-interested in web development, problem solving, and digital creativity.
+I’m **Javidan Hasanli**, an IT & Engineering student at ADA University.
 
-This website showcases my projects, skills, and academic work  
-as part of the **SITE1101** course and my individual learning journey.
+This website showcases my projects, skills, and learning journey  
+as part of the **SITE1101** course.
 
-👉 Start exploring from the navigation bar above!
+</div>
+
+---
+Explore the pages above to learn more!
