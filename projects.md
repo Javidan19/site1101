@@ -6,37 +6,24 @@ layout: single
 
 # 🚀 My Projects
 
-Below are some of the projects I have completed as part of my coursework and personal learning.
+Below are some of my featured works and learning progress:
 
----
+<div class="project-grid">
 
-## 🟦 Project 1 — Personal Website (SITE1101)
+  <div class="project-card">
+    <h3>💻 Codecademy Profile</h3>
+    <p>Programming practice, HTML/CSS, Python, and fundamentals.</p>
+    <a href="https://www.codecademy.com/profiles/Javidan19" target="_blank">View Profile →</a>
+  </div>
 
-This portfolio website was developed using **Jekyll** and the **Minimal Mistakes** theme, then hosted on **GitHub Pages**.  
-It includes a clean design, responsive layout, and multiple pages (Home, About, Projects).
+  <div class="project-card">
+    <h3>🌐 Personal Website</h3>
+    <p>This website built with Jekyll and GitHub Pages as part of SITE1101.</p>
+  </div>
 
-### ✔ Features of Project 1
-- Fully responsive design  
-- Clean navigation bar and footer  
-- Modular folder structure  
-- GitHub & Codecademy profile icons  
-- Hosted at GitHub Pages  
-- Uses Jekyll for extra functionality (+10% bonus)
+  <div class="project-card">
+    <h3>🎤 Speaking Projects</h3>
+    <p>Academic speeches, storytelling projects, and course presentations.</p>
+  </div>
 
-### 🖼 Screenshot
-![Project Screenshot](/assets/images/project1.png)
-
-🔗 **GitHub Repository:**  
-https://github.com/Javidan19/site1101
-
----
-
-## 🟩 (Optional) Hour of Code Project
-
-If you completed an Hour of Code activity, you can describe it here.
-
----
-
-## 🟨 Other Projects
-
-You can add more projects here anytime by updating this page.
+</div>
