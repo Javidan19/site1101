@@ -55,3 +55,14 @@ collections:
 # SASS SETTINGS
 sass:
   style: compressed
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/Javidan19"
+    - label: "Codecademy"
+      icon: "fas fa-laptop-code"
+      url: "https://www.codecademy.com/profiles/Javidan19"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:javidanhasanli02@gmail.com"
