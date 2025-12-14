@@ -1,23 +1,11 @@
-title: Javidan Hasanli
-description: Personal Portfolio Website for SITE1101
+title: Javidan Hasanli | SITE1101
+description: Personal academic portfolio for SITE1101
+author: Javidan Hasanli
 
-url: "https://javidan19.github.io"
-baseurl: "/site1101"
+theme: null
 
-remote_theme: mmistakes/minimal-mistakes
+markdown: kramdown
 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-remote-theme
+exclude:
+  - README.md
 
-author:
-  name: Javidan Hasanli
-
-navigation:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: /about/
-  - title: "Projects"
-    url: /projects/
