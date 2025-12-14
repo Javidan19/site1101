@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Javidan Hasanli | SITE1101</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(180deg, #f8fafc, #eef2f7);
       color: #1f2937;
     }
 
@@ -19,52 +20,67 @@
     }
 
     nav a {
-      color: #ffffff;
+      color: white;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .container {
-      max-width: 800px;
-      margin: 60px auto;
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 15px;
+      max-width: 900px;
+      margin: 70px auto;
+      background: white;
+      padding: 45px;
+      border-radius: 18px;
       text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+      animation: fadeIn 0.9s ease-in-out;
     }
 
-    .profile {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
+      object-fit: cover;
       border: 4px solid #0f172a;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
       margin-bottom: 20px;
     }
 
-    h1 {
-      margin-bottom: 10px;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-
-    .links a {
-      color: #2563eb;
-      font-weight: bold;
-      margin: 0 10px;
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: white;
       text-decoration: none;
+      font-weight: 600;
+    }
+
+    .github {
+      background: #0f172a;
+    }
+
+    .codecademy {
+      background: #2563eb;
     }
 
     footer {
       background: #0f172a;
-      color: #ffffff;
+      color: white;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       margin-top: 80px;
+      font-size: 14px;
     }
 
     footer a {
@@ -83,13 +99,13 @@
   </nav>
 
   <div class="container">
-    <img src="images/profile.jpg" alt="Profile photo" class="profile">
+    <img src="images/profile.jpg" alt="Javidan Hasanli" class="profile-img">
 
     <h1>Hello, I’m Javidan Hasanli 👋</h1>
 
     <p>
       I am a student at <strong>ADA University</strong> studying
-      <strong>Electrical and Electronic Engineering</strong>.
+      <strong>Electric and Electronical Engineering</strong>.
     </p>
 
     <p>
@@ -97,14 +113,15 @@
       <strong>SITE1101 – Principles of Information Systems</strong> course.
     </p>
 
-    <p class="links">
-      <a href="https://github.com/Javidan19" target="_blank">GitHub</a> |
-      <a href="https://www.codecademy.com/profiles/Javidan19" target="_blank">Codecademy</a>
-    </p>
+    <div class="buttons">
+      <a class="github" href="https://github.com/Javidan19" target="_blank">GitHub</a>
+      <a class="codecademy" href="https://www.codecademy.com/profiles/Javidan19" target="_blank">Codecademy</a>
+    </div>
   </div>
 
   <footer>
-    Contact: <a href="mailto:jhasanli23949@ada.edu.az">jhasanli23949@ada.edu.az</a><br>
+    Contact:
+    <a href="mailto:jhasanli23949@ada.edu.az">jhasanli23949@ada.edu.az</a><br>
     © 2025 Javidan Hasanli | SITE1101
   </footer>
 
