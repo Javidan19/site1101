@@ -20,7 +20,24 @@
       font-family: "Segoe UI", Arial, sans-serif;
       background: var(--bg-light);
       color: var(--text-light);
-      transition: 0.3s;
+      overflow-x: hidden;
+    }
+
+    /* OPENING EFFECT */
+    .reveal {
+      opacity: 0;
+      animation: reveal 1.1s ease forwards;
+    }
+
+    @keyframes reveal {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     #toggle {
@@ -52,11 +69,12 @@
       top: 12px;
       cursor: pointer;
       font-size: 18px;
+      color: white;
     }
 
     .container {
       max-width: 900px;
-      margin: 70px auto;
+      margin: 80px auto;
       background: var(--card-light);
       padding: 45px;
       border-radius: 18px;
@@ -94,11 +112,17 @@
   <label for="toggle" class="toggle-btn">🌙 / ☀</label>
 </nav>
 
-<div class="container">
+<div class="container reveal">
   <h2>About Me</h2>
 
   <p>
-    I am a student at ADA University studying Electrical and Electronic Engineering.
+    My name is Javidan Hasanli, and I am a student at ADA University studying
+    Electric and Electronical Engineering.
+  </p>
+
+  <p>
+    I am interested in electronics, engineering systems, and understanding how
+    theoretical concepts are applied to real-world technological solutions.
   </p>
 
   <h3>Skills & Interests</h3>
@@ -106,8 +130,8 @@
     <li>Basic electronics and circuit analysis</li>
     <li>Problem-solving and analytical thinking</li>
     <li>HTML & CSS fundamentals</li>
-    <li>Git & GitHub</li>
-    <li>Engineering applications</li>
+    <li>Git & GitHub version control</li>
+    <li>Engineering-based applications</li>
   </ul>
 </div>
 
