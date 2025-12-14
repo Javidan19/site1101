@@ -6,138 +6,220 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    :root {
+      --bg-light: #f4f6f8;
+      --bg-dark: #020617;
+      --card-light: #ffffff;
+      --card-dark: #0f172a;
+      --text-light: #1f2937;
+      --text-dark: #e5e7eb;
+      --chip-light: #e5e7eb;
+      --chip-dark: #1e293b;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #1f2937;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--bg-light);
+      color: var(--text-light);
+    }
+
+    .reveal {
+      opacity: 0;
+      animation: reveal 1s ease forwards;
+    }
+
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    #toggle { display: none; }
+
+    #toggle:checked ~ * {
+      background: var(--bg-dark);
+      color: var(--text-dark);
     }
 
     nav {
       background: #0f172a;
       padding: 15px;
       text-align: center;
+      position: relative;
     }
 
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      right: 20px;
+      top: 12px;
+      cursor: pointer;
+      font-size: 18px;
+      color: white;
     }
 
     .container {
       max-width: 900px;
-      margin: 60px auto;
-      background: white;
-      padding: 40px;
-      border-radius: 14px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      margin: 80px auto;
+      background: var(--card-light);
+      padding: 45px;
+      border-radius: 18px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
     }
 
-    h1, h2 {
-      color: #0f172a;
+    #toggle:checked ~ .container {
+      background: var(--card-dark);
     }
 
-    img {
-      max-width: 100%;
-      border-radius: 10px;
+    h2 { margin-top: 0; }
+
+    .chips {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 35px;
+    }
+
+    .chip {
+      background: var(--chip-light);
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    #toggle:checked ~ .container .chip {
+      background: var(--chip-dark);
+    }
+
+    ul { padding-left: 20px; }
+    ul li { margin-bottom: 8px; }
+
+    .project {
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
       margin: 20px 0;
-    }
-
-    ul {
-      margin-left: 20px;
     }
 
     footer {
       background: #0f172a;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 60px;
+      padding: 25px;
+      margin-top: 80px;
       font-size: 14px;
     }
 
-    a {
-      color: #2563eb;
+    footer a {
+      color: #93c5fd;
       text-decoration: none;
+      font-weight: 600;
     }
   </style>
 </head>
 
 <body>
 
+<input type="checkbox" id="toggle">
+
 <nav>
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="projects.html">Projects</a>
+  <label for="toggle" class="toggle-btn">🌙 / ☀</label>
 </nav>
 
-<div class="container">
+<div class="container reveal">
 
-  <h1>Project 1</h1>
-  <h2>How Does Hardware Work?</h2>
+  <!-- QUICK FACTS -->
+  <h2>Quick Facts</h2>
+  <div class="chips">
+    <div class="chip"><strong>University:</strong> ADA University</div>
+    <div class="chip"><strong>Major:</strong> Electrical and Electronic Engineering</div>
+    <div class="chip"><strong>Course:</strong> SITE1101</div>
+    <div class="chip"><strong>Tools:</strong> HTML, CSS, GitHub</div>
+  </div>
 
+  <!-- GENERAL OVERVIEW -->
+  <h2>Project Overview</h2>
   <p>
-    This project was completed as part of the course
-    <strong>Fall 2025 – Principles of Information Systems (SITE-1101)</strong>.
-    The main purpose of the project was to understand how computer hardware
-    processes information using logic gates.
+    This page presents my academic projects completed as part of the
+    <strong>SITE1101 – Principles of Information Systems</strong> course.
+    Each project focuses on developing both technical understanding and
+    practical skills.
   </p>
 
-  <img src="images/project1.jpg" alt="Logic Gates Diagram">
+  <!-- PROJECT 1 -->
+  <div class="project">
+    <h2>Project 1: How Does Hardware Work?</h2>
 
-  <p>
-    In this project, we explored how basic logic gates operate and how they form
-    the foundation of digital systems. Logic gates are essential components of
-    computer hardware and are responsible for performing logical operations.
-  </p>
+    <p>
+      This project was completed for the course
+      <strong>Fall 2025 – Principles of Information Systems (SITE1101)</strong>.
+      The objective of the project was to understand how computer hardware
+      processes information using logic gates.
+    </p>
 
-  <h3>Topics Covered</h3>
-  <ul>
-    <li>NOT, AND, OR logic gates</li>
-    <li>XOR gate (bonus task)</li>
-    <li>NAND gate (bonus task)</li>
-    <li>Basic principles of digital hardware</li>
-  </ul>
+    <img src="images/project1.jpg" alt="Logic Gates Diagram">
 
-  <h3>Video Demonstrations</h3>
-  <ul>
-    <li>
-      NOT, AND, OR Gates:
-      <a href="https://youtu.be/XrC6VHm74NU?si=w21XdssliAxr8vE7" target="_blank">
-        Watch Video
-      </a>
-    </li>
-    <li>
-      XOR Gate (Bonus):
-      <a href="https://youtu.be/k6JnbaQE69s?si=Vt1bdV4Rm0xk-CNr" target="_blank">
-        Watch Video
-      </a>
-    </li>
-    <li>
-      NAND Gate (Bonus):
-      <a href="https://youtu.be/bFCeDqsIwRs?si=tcylx98HHBdS4I4C" target="_blank">
-        Watch Video
-      </a>
-    </li>
-  </ul>
+    <p>
+      During this project, we studied how basic logic gates operate and how
+      they form the foundation of digital systems. Logic gates are essential
+      components of computer hardware and are responsible for performing
+      logical operations.
+    </p>
 
-  <h3>Teamwork & Learning Outcome</h3>
-  <p>
-    This project was completed as a team activity. Through collaboration and
-    discussion, we gained a clearer understanding of how hardware components
-    work together to process data in computer systems.
-  </p>
+    <h3>Topics Covered</h3>
+    <ul>
+      <li>NOT, AND, OR logic gates</li>
+      <li>XOR gate (bonus task)</li>
+      <li>NAND gate (bonus task)</li>
+      <li>Basic principles of digital hardware</li>
+    </ul>
+
+    <h3>Video Demonstrations</h3>
+    <ul>
+      <li>
+        NOT, AND, OR Gates:
+        <a href="https://youtu.be/XrC6VHm74NU" target="_blank">Watch Video</a>
+      </li>
+      <li>
+        XOR Gate (Bonus):
+        <a href="https://youtu.be/k6JnbaQE69s" target="_blank">Watch Video</a>
+      </li>
+      <li>
+        NAND Gate (Bonus):
+        <a href="https://youtu.be/bFCeDqsIwRs" target="_blank">Watch Video</a>
+      </li>
+    </ul>
+
+    <h3>Learning Outcome</h3>
+    <p>
+      This project helped me better understand how hardware components work
+      together to process data and how logical operations form the basis of
+      modern computing systems.
+    </p>
+  </div>
 
 </div>
 
 <footer>
-  © 2025 Javidan Hasanli | SITE1101 <br>
   Contact:
-  <a href="mailto:jhasanli23949@ada.edu.az" style="color:#93c5fd;">
-    jhasanli23949@ada.edu.az
-  </a>
+  <a href="mailto:jhasanli23949@ada.edu.az">jhasanli23949@ada.edu.az</a><br>
+  © 2025 Javidan Hasanli | SITE1101
 </footer>
 
 </body>
