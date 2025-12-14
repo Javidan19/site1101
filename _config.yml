@@ -1,0 +1,18 @@
+title: Javidan Hasanli
+description: Personal Portfolio Website for SITE1101
+remote_theme: mmistakes/minimal-mistakes
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+author:
+  name: Javidan Hasanli
+
+navigation:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
