@@ -6,118 +6,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    :root {
-      --bg-light: #f8fafc;
-      --bg-dark: #020617;
-      --card-light: #ffffff;
-      --card-dark: #0f172a;
-      --text-light: #1f2937;
-      --text-dark: #e5e7eb;
-      --accent: #2563eb;
+    :root{
+      --bg-light:#f8fafc;
+      --bg-dark:#020617;
+      --card-light:#ffffff;
+      --card-dark:#0f172a;
+      --text-light:#1f2937;
+      --text-dark:#e5e7eb;
+      --accent:#2563eb;
     }
 
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: var(--bg-light);
-      color: var(--text-light);
-      overflow-x: hidden;
+    body{
+      margin:0;
+      font-family:"Segoe UI",Arial,sans-serif;
+      background:var(--bg-light);
+      color:var(--text-light);
+      overflow-x:hidden;
     }
 
-    /* ===== OPENING EFFECT ===== */
-    .reveal {
-      animation: reveal 1.1s ease forwards;
-      opacity: 0;
+    .reveal{
+      opacity:0;
+      animation:reveal 1.1s ease forwards;
+    }
+    @keyframes reveal{
+      from{opacity:0;transform:translateY(40px);}
+      to{opacity:1;transform:translateY(0);}
     }
 
-    @keyframes reveal {
-      from {
-        opacity: 0;
-        transform: translateY(40px) scale(0.98);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
+    #toggle{display:none;}
+    #toggle:checked ~ *{
+      background:var(--bg-dark);
+      color:var(--text-dark);
     }
 
-    /* ===== DARK MODE ===== */
-    #toggle {
-      display: none;
+    nav{
+      background:#0f172a;
+      padding:15px;
+      text-align:center;
+      position:relative;
+    }
+    nav a{
+      color:white;
+      margin:0 15px;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .toggle-btn{
+      position:absolute;
+      right:20px;
+      top:12px;
+      cursor:pointer;
+      font-size:18px;
+      color:white;
     }
 
-    #toggle:checked ~ * {
-      background: var(--bg-dark);
-      color: var(--text-dark);
+    .container{
+      max-width:900px;
+      margin:80px auto;
+      background:var(--card-light);
+      padding:45px;
+      border-radius:18px;
+      text-align:center;
+      box-shadow:0 15px 40px rgba(0,0,0,0.12);
+      transition:0.3s;
+    }
+    #toggle:checked ~ .container{
+      background:var(--card-dark);
     }
 
-    nav {
-      background: #0f172a;
-      padding: 15px;
-      text-align: center;
-      position: relative;
+    .profile-img{
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      object-fit:cover;
+      border:4px solid #0f172a;
+      margin-bottom:20px;
     }
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 600;
+    .buttons a{
+      display:inline-block;
+      margin:10px;
+      padding:10px 22px;
+      border-radius:8px;
+      color:white;
+      text-decoration:none;
+      font-weight:600;
     }
+    .github{background:#0f172a;}
+    .codecademy{background:var(--accent);}
 
-    .toggle-btn {
-      position: absolute;
-      right: 20px;
-      top: 12px;
-      cursor: pointer;
-      font-size: 18px;
-      color: white;
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:80px;
+      font-size:14px;
     }
-
-    .container {
-      max-width: 900px;
-      margin: 80px auto;
-      background: var(--card-light);
-      padding: 45px;
-      border-radius: 18px;
-      text-align: center;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-      transition: 0.3s;
-    }
-
-    #toggle:checked ~ .container {
-      background: var(--card-dark);
-    }
-
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #0f172a;
-      margin-bottom: 20px;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 22px;
-      border-radius: 8px;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .github { background: #0f172a; }
-    .codecademy { background: var(--accent); }
-
-    footer {
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      padding: 25px;
-      margin-top: 80px;
-      font-size: 14px;
+    footer a{
+      color:#93c5fd;
+      text-decoration:none;
+      font-weight:600;
     }
   </style>
 </head>
@@ -155,6 +144,8 @@
 </div>
 
 <footer>
+  Contact:
+  <a href="mailto:jhasanli23949@ada.edu.az">jhasanli23949@ada.edu.az</a><br>
   © 2025 Javidan Hasanli | SITE1101
 </footer>
 
