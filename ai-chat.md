@@ -7,8 +7,4 @@ The AI was consulted only for specific technical and challenging aspects, includ
 - Understanding correct HTML structure and basic CSS usage
 - Resolving selected issues related to GitHub Pages and Jekyll configuration
 - Receiving guidance on implementing light/dark mode functionality
-- Adding a simple opening animation effect for better user experience
-
-The main structure, content, design decisions, and implementation of the website
-were completed independently by the student. AI was used strictly as a supportive
-tool for difficult parts rather than for generating the full project.
+- Adding a simple opening animation effect for better user experienc
