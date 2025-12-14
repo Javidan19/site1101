@@ -13,7 +13,6 @@
       --card-dark: #0f172a;
       --text-light: #1f2937;
       --text-dark: #e5e7eb;
-      --accent: #2563eb;
     }
 
     body {
@@ -24,11 +23,11 @@
       transition: 0.3s;
     }
 
-    #dark-toggle {
+    #toggle {
       display: none;
     }
 
-    #dark-toggle:checked ~ * {
+    #toggle:checked ~ * {
       background: var(--bg-dark);
       color: var(--text-dark);
     }
@@ -37,7 +36,7 @@
       background: #0f172a;
       padding: 15px;
       text-align: center;
-      color: white;
+      position: relative;
     }
 
     nav a {
@@ -47,15 +46,12 @@
       font-weight: 600;
     }
 
-    .toggle {
+    .toggle-btn {
       position: absolute;
       right: 20px;
-      top: 15px;
-      border: 1px solid white;
-      padding: 5px 10px;
-      border-radius: 6px;
+      top: 12px;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 18px;
     }
 
     .container {
@@ -68,7 +64,7 @@
       transition: 0.3s;
     }
 
-    #dark-toggle:checked ~ .container {
+    #toggle:checked ~ .container {
       background: var(--card-dark);
     }
 
@@ -89,26 +85,20 @@
 
 <body>
 
-<input type="checkbox" id="dark-toggle">
+<input type="checkbox" id="toggle">
 
 <nav>
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="projects.html">Projects</a>
-  <label for="dark-toggle" class="toggle">Dark</label>
+  <label for="toggle" class="toggle-btn">🌙 / ☀</label>
 </nav>
 
 <div class="container">
   <h2>About Me</h2>
 
   <p>
-    My name is Javidan Hasanli, and I am a student at ADA University studying
-    Electric and Electronical Engineering.
-  </p>
-
-  <p>
-    I am interested in understanding how electronic systems work and how
-    engineering principles are applied to real-world problems.
+    I am a student at ADA University studying Electrical and Electronic Engineering.
   </p>
 
   <h3>Skills & Interests</h3>
@@ -116,8 +106,8 @@
     <li>Basic electronics and circuit analysis</li>
     <li>Problem-solving and analytical thinking</li>
     <li>HTML & CSS fundamentals</li>
-    <li>Git & GitHub version control</li>
-    <li>Interest in real-world engineering applications</li>
+    <li>Git & GitHub</li>
+    <li>Engineering applications</li>
   </ul>
 </div>
 
