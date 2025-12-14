@@ -21,9 +21,27 @@
       font-family: "Segoe UI", Arial, sans-serif;
       background: var(--bg-light);
       color: var(--text-light);
-      transition: 0.3s;
+      overflow-x: hidden;
     }
 
+    /* ===== OPENING EFFECT ===== */
+    .reveal {
+      animation: reveal 1.1s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes reveal {
+      from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.98);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    /* ===== DARK MODE ===== */
     #toggle {
       display: none;
     }
@@ -53,11 +71,12 @@
       top: 12px;
       cursor: pointer;
       font-size: 18px;
+      color: white;
     }
 
     .container {
       max-width: 900px;
-      margin: 70px auto;
+      margin: 80px auto;
       background: var(--card-light);
       padding: 45px;
       border-radius: 18px;
@@ -68,10 +87,6 @@
 
     #toggle:checked ~ .container {
       background: var(--card-dark);
-    }
-
-    .container:hover {
-      transform: translateY(-4px);
     }
 
     .profile-img {
@@ -91,15 +106,10 @@
       color: white;
       text-decoration: none;
       font-weight: 600;
-      transition: 0.2s;
     }
 
     .github { background: #0f172a; }
     .codecademy { background: var(--accent); }
-
-    .buttons a:hover {
-      opacity: 0.85;
-    }
 
     footer {
       background: #0f172a;
@@ -123,7 +133,7 @@
   <label for="toggle" class="toggle-btn">🌙 / ☀</label>
 </nav>
 
-<div class="container">
+<div class="container reveal">
   <img src="images/profile.jpg" class="profile-img" alt="Profile">
 
   <h1>Hello, I’m Javidan Hasanli 👋</h1>
@@ -145,7 +155,6 @@
 </div>
 
 <footer>
-  Contact: jhasanli23949@ada.edu.az <br>
   © 2025 Javidan Hasanli | SITE1101
 </footer>
 
