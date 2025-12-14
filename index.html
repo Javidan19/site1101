@@ -6,27 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    :root {
+      --bg-light: #f8fafc;
+      --bg-dark: #020617;
+      --card-light: #ffffff;
+      --card-dark: #0f172a;
+      --text-light: #1f2937;
+      --text-dark: #e5e7eb;
+      --accent: #2563eb;
+    }
+
     body {
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(180deg, #f8fafc, #eef2f7);
-      color: #1f2937;
-      transition: background 0.3s, color 0.3s;
+      background: var(--bg-light);
+      color: var(--text-light);
+      transition: 0.3s;
     }
 
-    body.dark {
-      background: #020617;
-      color: #e5e7eb;
+    #toggle {
+      display: none;
+    }
+
+    #toggle:checked ~ * {
+      background: var(--bg-dark);
+      color: var(--text-dark);
     }
 
     nav {
       background: #0f172a;
       padding: 15px;
       text-align: center;
-    }
-
-    body.dark nav {
-      background: #020617;
+      position: relative;
     }
 
     nav a {
@@ -36,32 +47,31 @@
       font-weight: 600;
     }
 
-    .toggle {
+    .toggle-btn {
       position: absolute;
       right: 20px;
-      top: 15px;
-      background: none;
-      border: 1px solid white;
-      color: white;
-      padding: 6px 12px;
-      border-radius: 6px;
+      top: 12px;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 18px;
     }
 
     .container {
       max-width: 900px;
       margin: 70px auto;
-      background: white;
+      background: var(--card-light);
       padding: 45px;
       border-radius: 18px;
       text-align: center;
       box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-      transition: background 0.3s;
+      transition: 0.3s;
     }
 
-    body.dark .container {
-      background: #0f172a;
+    #toggle:checked ~ .container {
+      background: var(--card-dark);
+    }
+
+    .container:hover {
+      transform: translateY(-4px);
     }
 
     .profile-img {
@@ -73,22 +83,23 @@
       margin-bottom: 20px;
     }
 
-    body.dark .profile-img {
-      border-color: #2563eb;
-    }
-
     .buttons a {
       display: inline-block;
       margin: 10px;
-      padding: 10px 20px;
+      padding: 10px 22px;
       border-radius: 8px;
       color: white;
       text-decoration: none;
       font-weight: 600;
+      transition: 0.2s;
     }
 
     .github { background: #0f172a; }
-    .codecademy { background: #2563eb; }
+    .codecademy { background: var(--accent); }
+
+    .buttons a:hover {
+      opacity: 0.85;
+    }
 
     footer {
       background: #0f172a;
@@ -98,59 +109,45 @@
       margin-top: 80px;
       font-size: 14px;
     }
-
-    body.dark footer {
-      background: #020617;
-    }
-
-    footer a {
-      color: #93c5fd;
-      text-decoration: none;
-    }
   </style>
 </head>
 
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <button class="toggle" onclick="toggleDark()">Dark</button>
-  </nav>
+<input type="checkbox" id="toggle">
 
-  <div class="container">
-    <img src="images/profile.jpg" alt="Javidan Hasanli" class="profile-img">
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <label for="toggle" class="toggle-btn">🌙 / ☀</label>
+</nav>
 
-    <h1>Hello, I’m Javidan Hasanli 👋</h1>
+<div class="container">
+  <img src="images/profile.jpg" class="profile-img" alt="Profile">
 
-    <p>
-      I am a student at <strong>ADA University</strong> studying
-      <strong>Electric and Electronical Engineering</strong>.
-    </p>
+  <h1>Hello, I’m Javidan Hasanli 👋</h1>
 
-    <p>
-      This website is my personal portfolio created for the
-      <strong>SITE1101 – Principles of Information Systems</strong> course.
-    </p>
+  <p>
+    I am a student at <strong>ADA University</strong> studying
+    <strong>Electric and Electronical Engineering</strong>.
+  </p>
 
-    <div class="buttons">
-      <a class="github" href="https://github.com/Javidan19" target="_blank">GitHub</a>
-      <a class="codecademy" href="https://www.codecademy.com/profiles/Javidan19" target="_blank">Codecademy</a>
-    </div>
+  <p>
+    This website is my personal portfolio created for the
+    <strong>SITE1101 – Principles of Information Systems</strong> course.
+  </p>
+
+  <div class="buttons">
+    <a class="github" href="https://github.com/Javidan19" target="_blank">GitHub</a>
+    <a class="codecademy" href="https://www.codecademy.com/profiles/Javidan19" target="_blank">Codecademy</a>
   </div>
+</div>
 
-  <footer>
-    Contact:
-    <a href="mailto:jhasanli23949@ada.edu.az">jhasanli23949@ada.edu.az</a><br>
-    © 2025 Javidan Hasanli | SITE1101
-  </footer>
-
-  <script>
-    function toggleDark() {
-      document.body.classList.toggle("dark");
-    }
-  </script>
+<footer>
+  Contact: jhasanli23949@ada.edu.az <br>
+  © 2025 Javidan Hasanli | SITE1101
+</footer>
 
 </body>
 </html>
