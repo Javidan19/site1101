@@ -6,17 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    :root {
+      --bg-light: #f4f6f8;
+      --bg-dark: #020617;
+      --card-light: #ffffff;
+      --card-dark: #0f172a;
+      --text-light: #1f2937;
+      --text-dark: #e5e7eb;
+      --accent: #2563eb;
+    }
+
     body {
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
-      background: #f4f6f8;
-      color: #1f2937;
+      background: var(--bg-light);
+      color: var(--text-light);
+      transition: 0.3s;
+    }
+
+    #dark-toggle {
+      display: none;
+    }
+
+    #dark-toggle:checked ~ * {
+      background: var(--bg-dark);
+      color: var(--text-dark);
     }
 
     nav {
       background: #0f172a;
       padding: 15px;
       text-align: center;
+      color: white;
     }
 
     nav a {
@@ -26,13 +47,29 @@
       font-weight: 600;
     }
 
+    .toggle {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      border: 1px solid white;
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
     .container {
       max-width: 900px;
       margin: 70px auto;
-      background: white;
+      background: var(--card-light);
       padding: 45px;
       border-radius: 18px;
       box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+      transition: 0.3s;
+    }
+
+    #dark-toggle:checked ~ .container {
+      background: var(--card-dark);
     }
 
     footer {
@@ -48,29 +85,32 @@
 
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-  </nav>
+<input type="checkbox" id="dark-toggle">
 
-  <div class="container">
-    <h2>Projects</h2>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <label for="dark-toggle" class="toggle">Dark</label>
+</nav>
 
-    <p>
-      This project is a personal portfolio website created as part of the
-      SITE1101 – Principles of Information Systems course.
-    </p>
+<div class="container">
+  <h2>Projects</h2>
 
-    <p>
-      The website is developed using HTML and CSS and is deployed using
-      GitHub Pages.
-    </p>
-  </div>
+  <p>
+    This project is a personal portfolio website created as part of the
+    SITE1101 – Principles of Information Systems course.
+  </p>
 
-  <footer>
-    © 2025 Javidan Hasanli | SITE1101
-  </footer>
+  <p>
+    The website is developed using HTML and CSS and deployed using
+    GitHub Pages.
+  </p>
+</div>
+
+<footer>
+  © 2025 Javidan Hasanli | SITE1101
+</footer>
 
 </body>
 </html>
