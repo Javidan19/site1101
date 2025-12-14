@@ -13,6 +13,7 @@
       --card-dark: #0f172a;
       --text-light: #1f2937;
       --text-dark: #e5e7eb;
+      --accent: #2563eb;
     }
 
     body {
@@ -23,7 +24,7 @@
       overflow-x: hidden;
     }
 
-    /* OPENING EFFECT */
+    /* Opening effect */
     .reveal {
       opacity: 0;
       animation: reveal 1.1s ease forwards;
@@ -87,7 +88,33 @@
     }
 
     .section {
-      margin-bottom: 35px;
+      margin-bottom: 40px;
+    }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .fact-box {
+      background: #e5e7eb;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 14px;
+    }
+
+    #toggle:checked ~ .container .fact-box {
+      background: #020617;
+    }
+
+    .status {
+      list-style: none;
+      padding: 0;
+    }
+
+    .status li {
+      margin-bottom: 10px;
     }
 
     footer {
@@ -115,40 +142,42 @@
 <div class="container reveal">
 
   <div class="section">
-    <h2>Personal Background</h2>
+    <h2>Quick Facts</h2>
+    <div class="facts">
+      <div class="fact-box"><strong>University:</strong> ADA University</div>
+      <div class="fact-box"><strong>Major:</strong> Electric and Electronical Engineering</div>
+      <div class="fact-box"><strong>Course:</strong> SITE1101</div>
+      <div class="fact-box"><strong>Tools:</strong> HTML, CSS, GitHub</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Project Overview</h2>
     <p>
-      I am an Electric and Electronical Engineering student at ADA University with
-      a strong interest in technology, electronics, and engineering systems.
+      This website is a personal academic portfolio created as part of the
+      <strong>SITE1101 – Principles of Information Systems</strong> course.
+      It presents my background, skills, and learning progress in a structured
+      and professional format.
     </p>
   </div>
 
   <div class="section">
-    <h2>Academic Project</h2>
-    <p>
-      This portfolio website was developed as part of the
-      <strong>SITE1101 – Principles of Information Systems</strong> course.
-    </p>
-
-    <p>
-      The project demonstrates my ability to design a structured and visually
-      clean website using HTML and CSS, while applying basic user interface and
-      user experience principles.
-    </p>
-
-    <ul>
-      <li>HTML & CSS based design</li>
-      <li>Light and Dark mode support</li>
-      <li>Opening animation for improved user experience</li>
-      <li>Deployed via GitHub Pages</li>
+    <h2>Project Status</h2>
+    <ul class="status">
+      <li>✔ Planning & Structure</li>
+      <li>✔ Design & Layout</li>
+      <li>✔ Light / Dark Mode</li>
+      <li>✔ Deployment on GitHub Pages</li>
+      <li>✔ Final Review & Submission</li>
     </ul>
   </div>
 
   <div class="section">
-    <h2>Future Plans</h2>
+    <h2>Future Improvements</h2>
     <p>
-      I plan to further develop this website by adding new academic projects,
-      improving interactivity, and expanding my technical portfolio as I progress
-      through my studies.
+      In the future, I aim to expand this website with additional academic
+      projects, improved interactivity, and more advanced features as my
+      technical knowledge grows.
     </p>
   </div>
 
