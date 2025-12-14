@@ -13,7 +13,8 @@
       --card-dark: #0f172a;
       --text-light: #1f2937;
       --text-dark: #e5e7eb;
-      --accent: #2563eb;
+      --chip-light: #e5e7eb;
+      --chip-dark: #1e293b;
     }
 
     body {
@@ -21,24 +22,17 @@
       font-family: "Segoe UI", Arial, sans-serif;
       background: var(--bg-light);
       color: var(--text-light);
-      overflow-x: hidden;
     }
 
-    /* Opening effect */
+    /* Animation */
     .reveal {
       opacity: 0;
-      animation: reveal 1.1s ease forwards;
+      animation: reveal 1s ease forwards;
     }
 
     @keyframes reveal {
-      from {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     #toggle {
@@ -80,41 +74,41 @@
       padding: 45px;
       border-radius: 18px;
       box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-      transition: 0.3s;
     }
 
     #toggle:checked ~ .container {
       background: var(--card-dark);
     }
 
-    .section {
-      margin-bottom: 40px;
+    h2 {
+      margin-top: 0;
     }
 
-    .facts {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    .chips {
+      display: flex;
       gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 35px;
     }
 
-    .fact-box {
-      background: #e5e7eb;
-      padding: 15px;
+    .chip {
+      background: var(--chip-light);
+      padding: 12px 18px;
       border-radius: 12px;
       font-size: 14px;
+      font-weight: 500;
     }
 
-    #toggle:checked ~ .container .fact-box {
-      background: #020617;
+    #toggle:checked ~ .container .chip {
+      background: var(--chip-dark);
     }
 
-    .status {
-      list-style: none;
-      padding: 0;
+    ul {
+      padding-left: 20px;
     }
 
-    .status li {
-      margin-bottom: 10px;
+    ul li {
+      margin-bottom: 8px;
     }
 
     footer {
@@ -124,6 +118,12 @@
       padding: 25px;
       margin-top: 80px;
       font-size: 14px;
+    }
+
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-weight: 600;
     }
   </style>
 </head>
@@ -141,49 +141,42 @@
 
 <div class="container reveal">
 
-  <div class="section">
-    <h2>Quick Facts</h2>
-    <div class="facts">
-      <div class="fact-box"><strong>University:</strong> ADA University</div>
-      <div class="fact-box"><strong>Major:</strong> Electrical and Electronic Engineering</div>
-      <div class="fact-box"><strong>Course:</strong> SITE1101</div>
-      <div class="fact-box"><strong>Tools:</strong> HTML, CSS, GitHub</div>
-    </div>
+  <h2>Quick Facts</h2>
+  <div class="chips">
+    <div class="chip"><strong>University:</strong> ADA University</div>
+    <div class="chip"><strong>Major:</strong> Electric and Electronical Engineering</div>
+    <div class="chip"><strong>Course:</strong> SITE1101</div>
+    <div class="chip"><strong>Tools:</strong> HTML, CSS, GitHub</div>
   </div>
 
-  <div class="section">
-    <h2>Project Overview</h2>
-    <p>
-      This website is a personal academic portfolio created as part of the
-      <strong>SITE1101 – Principles of Information Systems</strong> course.
-      It presents my background, skills, and learning progress in a structured
-      and professional format.
-    </p>
-  </div>
+  <h2>Project Overview</h2>
+  <p>
+    This website is a personal academic portfolio created as part of the
+    <strong>SITE1101 – Principles of Information Systems</strong> course.
+    It presents my background, skills, and learning progress in a structured
+    and professional format.
+  </p>
 
-  <div class="section">
-    <h2>Project Status</h2>
-    <ul class="status">
-      <li>✔ Planning & Structure</li>
-      <li>✔ Design & Layout</li>
-      <li>✔ Light / Dark Mode</li>
-      <li>✔ Deployment on GitHub Pages</li>
-      <li>✔ Final Review & Submission</li>
-    </ul>
-  </div>
+  <h2>Project Status</h2>
+  <ul>
+    <li>✔ Planning & Structure</li>
+    <li>✔ Design & Layout</li>
+    <li>✔ Light / Dark Mode</li>
+    <li>✔ Deployment on GitHub Pages</li>
+    <li>✔ Final Review & Submission</li>
+  </ul>
 
-  <div class="section">
-    <h2>Future Improvements</h2>
-    <p>
-      In the future, I aim to expand this website with additional academic
-      projects, improved interactivity, and more advanced features as my
-      technical knowledge grows.
-    </p>
-  </div>
+  <h2>Future Improvements</h2>
+  <p>
+    In the future, I aim to expand this website with additional academic projects,
+    improved interactivity, and more advanced features as my technical knowledge grows.
+  </p>
 
 </div>
 
 <footer>
+  Contact:
+  <a href="mailto:jhasanli23949@ada.edu.az">jhasanli23949@ada.edu.az</a><br>
   © 2025 Javidan Hasanli | SITE1101
 </footer>
 
